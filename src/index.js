@@ -6,7 +6,7 @@ const staticPath = path.join(__dirname, "../public");
 app.use(express.static(staticPath));
 
 //app.get(route, callback)
-app.get("/" , (req, res)=>{
+app.get("/" , (req, res)=>{//tmkc
     //console.log(req, "hi");
     //console.log(res);
     res.send("hello from the express");
