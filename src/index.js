@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app= express();
-
+const port=8000;
 const staticPath = path.join(__dirname, "../public");
 app.use(express.static(staticPath));
 
@@ -11,6 +11,6 @@ app.get("/" , (req, res)=>{
     
 })
 
-app.listen(8000, () =>{
-    console.log("listening port at 8000");
+app.listen(port, () =>{
+    console.log(`listening to port ${port}`);
 })
